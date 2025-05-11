@@ -19,4 +19,6 @@ Redis Uses a RESP(Redis Serialization Protocol) for client-server communication.
 <pre>client_socket.send(encoded_response)</pre>
 
 ## Visual Flow
-<pre> Network bytes → RESP Parser → Python objects → Command processing ↓ Network bytes ← RESP Encoder ← Python objects ← Command result  </pre>
+<pre> Network bytes → RESP Parser → Python objects → Command processing 
+                                                          ↓ 
+    Network bytes ← RESP Encoder ← Python objects ← Command result  </pre>
